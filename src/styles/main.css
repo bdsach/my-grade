@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.label {
+  @apply mb-2 block font-ibm-plex-sans-thai text-base font-medium text-slate-900 dark:text-white;
+}
+
+.input-field {
+  @apply block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-base placeholder-slate-400 caret-red-600 shadow-sm focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500 disabled:cursor-not-allowed disabled:border-slate-200 disabled:bg-slate-50 disabled:text-slate-500 disabled:shadow-none dark:border-slate-700 dark:bg-slate-800 dark:text-white disabled:dark:border-slate-500 disabled:dark:bg-slate-700;
+}
+
+.submit-button {
+  @apply w-full rounded-lg bg-red-500 disabled:dark:bg-red-400 transition-all duration-300 py-2 font-ibm-plex-sans-thai text-lg font-medium text-white;
+}
+
+.back-button {
+  @apply block w-full rounded-lg border border-red-500 py-2 font-ibm-plex-sans-thai text-lg font-medium text-red-500;
+}
+
+.error-message {
+  @apply font-ibm-plex-sans-thai text-red-500 dark:text-red-400 mt-2;
+}
